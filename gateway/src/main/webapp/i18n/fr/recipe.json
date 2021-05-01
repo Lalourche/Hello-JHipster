@@ -1,0 +1,30 @@
+{
+  "gatewayApp": {
+    "recipe": {
+      "home": {
+        "title": "Recipes",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Recipe",
+        "createOrEditLabel": "Créer ou éditer un Recipe",
+        "search": "Recherche pour Recipe",
+        "notFound": "Aucun Recipe trouvé"
+      },
+      "created": "Un nouveau Recipe a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Recipe avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Recipe avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Recipe {{ id }} ?"
+      },
+      "detail": {
+        "title": "Recipe"
+      },
+      "id": "ID",
+      "name": "Name",
+      "cooking": "Cooking",
+      "cookingTime": "Cooking Time",
+      "picture": "Picture",
+      "ingredients": "Ingredients",
+      "steps": "Steps"
+    }
+  }
+}

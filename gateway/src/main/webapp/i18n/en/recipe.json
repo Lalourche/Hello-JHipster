@@ -1,0 +1,30 @@
+{
+  "gatewayApp": {
+    "recipe": {
+      "home": {
+        "title": "Recipes",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Recipe",
+        "createOrEditLabel": "Create or edit a Recipe",
+        "search": "Search for Recipe",
+        "notFound": "No Recipes found"
+      },
+      "created": "A new Recipe is created with identifier {{ param }}",
+      "updated": "A Recipe is updated with identifier {{ param }}",
+      "deleted": "A Recipe is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Recipe {{ id }}?"
+      },
+      "detail": {
+        "title": "Recipe"
+      },
+      "id": "ID",
+      "name": "Name",
+      "cooking": "Cooking",
+      "cookingTime": "Cooking Time",
+      "picture": "Picture",
+      "ingredients": "Ingredients",
+      "steps": "Steps"
+    }
+  }
+}

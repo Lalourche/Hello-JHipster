@@ -1,0 +1,26 @@
+{
+  "gatewayApp": {
+    "step": {
+      "home": {
+        "title": "Steps",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Step",
+        "createOrEditLabel": "Create or edit a Step",
+        "search": "Search for Step",
+        "notFound": "No Steps found"
+      },
+      "created": "A new Step is created with identifier {{ param }}",
+      "updated": "A Step is updated with identifier {{ param }}",
+      "deleted": "A Step is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Step {{ id }}?"
+      },
+      "detail": {
+        "title": "Step"
+      },
+      "id": "ID",
+      "action": "Action",
+      "recipe": "Recipe"
+    }
+  }
+}

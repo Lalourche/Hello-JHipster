@@ -1,0 +1,26 @@
+{
+  "gatewayApp": {
+    "step": {
+      "home": {
+        "title": "Steps",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Step",
+        "createOrEditLabel": "Créer ou éditer un Step",
+        "search": "Recherche pour Step",
+        "notFound": "Aucun Step trouvé"
+      },
+      "created": "Un nouveau Step a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Step avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Step avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Step {{ id }} ?"
+      },
+      "detail": {
+        "title": "Step"
+      },
+      "id": "ID",
+      "action": "Action",
+      "recipe": "Recipe"
+    }
+  }
+}

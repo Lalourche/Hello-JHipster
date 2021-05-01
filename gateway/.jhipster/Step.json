@@ -1,0 +1,31 @@
+{
+  "name": "Step",
+  "fields": [
+    {
+      "fieldName": "action",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "recipe",
+      "otherEntityRelationshipName": "steps",
+      "relationshipValidateRules": "required",
+      "relationshipName": "recipe",
+      "ownerSide": false
+    }
+  ],
+  "entityTableName": "step",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["gateway", "recipes"],
+  "databaseType": "sql",
+  "changelogDate": "20210501153559"
+}

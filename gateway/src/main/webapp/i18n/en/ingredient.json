@@ -1,0 +1,26 @@
+{
+  "gatewayApp": {
+    "ingredient": {
+      "home": {
+        "title": "Ingredients",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Ingredient",
+        "createOrEditLabel": "Create or edit a Ingredient",
+        "search": "Search for Ingredient",
+        "notFound": "No Ingredients found"
+      },
+      "created": "A new Ingredient is created with identifier {{ param }}",
+      "updated": "A Ingredient is updated with identifier {{ param }}",
+      "deleted": "A Ingredient is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Ingredient {{ id }}?"
+      },
+      "detail": {
+        "title": "Ingredient"
+      },
+      "id": "ID",
+      "name": "Name",
+      "recipe": "Recipe"
+    }
+  }
+}

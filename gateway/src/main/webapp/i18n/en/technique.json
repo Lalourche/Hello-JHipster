@@ -1,0 +1,25 @@
+{
+  "gatewayApp": {
+    "technique": {
+      "home": {
+        "title": "Techniques",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Technique",
+        "createOrEditLabel": "Create or edit a Technique",
+        "search": "Search for Technique",
+        "notFound": "No Techniques found"
+      },
+      "created": "A new Technique is created with identifier {{ param }}",
+      "updated": "A Technique is updated with identifier {{ param }}",
+      "deleted": "A Technique is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Technique {{ id }}?"
+      },
+      "detail": {
+        "title": "Technique"
+      },
+      "id": "ID",
+      "description": "Description"
+    }
+  }
+}

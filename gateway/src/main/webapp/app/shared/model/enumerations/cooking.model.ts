@@ -1,0 +1,5 @@
+export enum Cooking {
+  WITH_COOKING = 'WITH_COOKING',
+
+  WITHOUT_COOKING = 'WITHOUT_COOKING',
+}

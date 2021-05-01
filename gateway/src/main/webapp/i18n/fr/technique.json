@@ -1,0 +1,25 @@
+{
+  "gatewayApp": {
+    "technique": {
+      "home": {
+        "title": "Techniques",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Technique",
+        "createOrEditLabel": "Créer ou éditer un Technique",
+        "search": "Recherche pour Technique",
+        "notFound": "Aucun Technique trouvé"
+      },
+      "created": "Un nouveau Technique a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Technique avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Technique avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Technique {{ id }} ?"
+      },
+      "detail": {
+        "title": "Technique"
+      },
+      "id": "ID",
+      "description": "Description"
+    }
+  }
+}
