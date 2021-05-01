@@ -1,0 +1,24 @@
+{
+  "name": "Technique",
+  "fields": [
+    {
+      "fieldName": "description",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "technique",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["gateway", "techniques"],
+  "microserviceName": "techniques",
+  "clientRootFolder": "techniques",
+  "databaseType": "mongodb",
+  "changelogDate": "20210501153359"
+}
