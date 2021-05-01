@@ -1,0 +1,94 @@
+// Application
+
+application {
+  config {
+    baseName gateway,
+    applicationType gateway,
+    packageName fr.lalourche.hellojhipster.gateway,
+    authenticationType jwt,
+    prodDatabaseType postgresql,
+    clientFramework react,
+    serviceDiscoveryType eureka,
+    cacheProvider hazelcast,
+    buildTool gradle,
+    searchEngine elasticsearch,
+    nativeLanguage en,
+    languages [en, fr],
+    testFrameworks [protractor, cucumber, gatling]
+  }
+  entities *
+}
+
+application {
+  config {
+    baseName recipes,
+    applicationType microservice,
+    packageName fr.lalourche.hellojhipster.recipes,
+    authenticationType jwt,
+    prodDatabaseType postgresql,
+    devDatabaseType h2Memory,
+    enableHibernateCache true,
+    serverPort 8081,
+    serviceDiscoveryType eureka,
+    cacheProvider hazelcast,
+    buildTool gradle,
+    searchEngine elasticsearch,
+    nativeLanguage en,
+    languages [en, fr],
+    testFrameworks [protractor, cucumber, gatling]
+  }
+  entities Recipe, Ingredient, Step
+}
+
+application {
+  config {
+    baseName techniques,
+    applicationType microservice,
+    packageName fr.lalourche.hellojhipster.steps,
+    authenticationType jwt,
+    databaseType mongodb,
+    prodDatabaseType no,
+    devDatabaseType h2Memory,
+    enableHibernateCache true,
+    serverPort 8082,
+    serviceDiscoveryType eureka,
+    cacheProvider hazelcast,
+    buildTool gradle,
+    searchEngine elasticsearch,
+    nativeLanguage en,
+    languages [en, fr],
+    testFrameworks [protractor, cucumber, gatling]
+  }
+  entities Technique
+}
+
+
+// Model
+
+entity Ingredient{
+  name String required
+}
+
+entity Step {
+  action String required
+}
+
+entity Recipe {
+  name String required,
+  cooking Cooking required,
+  cookingTime Double min(0) max(65535),
+  picture ImageBlob
+}
+
+enum Cooking {
+	WITH_COOKING, WITHOUT_COOKING
+}
+
+relationship ManyToMany {
+  Recipe{ingredients} to Ingredient{recipe required},
+  Recipe{steps} to Step{recipe required}
+}
+
+entity Technique {
+  description String required
+}
