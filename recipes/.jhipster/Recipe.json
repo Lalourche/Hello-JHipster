@@ -1,0 +1,57 @@
+{
+  "name": "Recipe",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "cooking",
+      "fieldType": "Cooking",
+      "fieldValues": "WITH_COOKING,WITHOUT_COOKING",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "cookingTime",
+      "fieldType": "Double",
+      "fieldValidateRules": ["min", "max"],
+      "fieldValidateRulesMin": "0",
+      "fieldValidateRulesMax": "65535"
+    },
+    {
+      "fieldName": "picture",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "image"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "ingredient",
+      "otherEntityRelationshipName": "recipe",
+      "relationshipName": "ingredients",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "step",
+      "otherEntityRelationshipName": "recipe",
+      "relationshipName": "steps",
+      "ownerSide": true
+    }
+  ],
+  "entityTableName": "recipe",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["gateway", "recipes"],
+  "microserviceName": "recipes",
+  "clientRootFolder": "recipes",
+  "databaseType": "sql",
+  "changelogDate": "20210501153459"
+}
